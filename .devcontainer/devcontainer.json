@@ -1,0 +1,17 @@
+{
+  "name": "cragradar-frontend",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": "..",
+    "target": "dev"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind",
+  "workspaceFolder": "/app",
+  "remoteUser": "node",
+  "postCreateCommand": "pnpm install --frozen-lockfile",
+  "customizations": {
+    "vscode": {
+      "extensions": ["Vue.volar", "dbaeumer.vscode-eslint"]
+    }
+  }
+}
