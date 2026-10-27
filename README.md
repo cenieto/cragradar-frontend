@@ -1,7 +1,7 @@
 # cragradar-frontend
 
-Vue 3 single-page app of CragRadar. Published to npm and to GHCR (container image that serves the
-built app). Deployment manifests live in `cragradar-frontend-service`, not here.
+Vue 3 single-page app of CragRadar. Shipped only as a container image on GHCR, which serves the
+built app. Deployment manifests live in `cragradar-frontend-service`, not here.
 
 ## Views
 
